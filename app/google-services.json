@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "85573424078",
+    "project_id": "earning-master-f5366",
+    "storage_bucket": "earning-master-f5366.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:85573424078:android:d6d7e2ca76f0b71dd3119f",
+        "android_client_info": {
+          "package_name": "com.burhanstore.earningmaster"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "85573424078-4gfkafrrl74s18udlaf5g1q6dlm6kl6o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAd6FL2z1Zkt6SJ0nfEmFiH8hK_be8dWJk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "85573424078-4gfkafrrl74s18udlaf5g1q6dlm6kl6o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

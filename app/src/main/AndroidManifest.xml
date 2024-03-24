@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.burhanstore.earningmaster">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.AD_ID" />
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission
+        android:name="com.google.android.gms.permission.AD_ID"
+        tools:node="remove" />
+
+
+    <application
+        android:name="com.burhanstore.earningmaster.helper.AppController"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+        <activity
+            android:name="com.burhanstore.earningmaster.activity.TransactionsHistoryActivity"
+            android:exported="false"
+            android:label="@string/transactions_history" />
+        <activity
+            android:name="com.burhanstore.earningmaster.activity.EarningHistoryActivity"
+            android:exported="false"
+            android:label="@string/earning_history" />
+        <activity
+            android:name="com.burhanstore.earningmaster.activity.NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.burhanstore.earningmaster.activity.ProfileActivity"
+            android:label="@string/Profile" />
+        <activity
+            android:name="com.burhanstore.earningmaster.activity.ContactActivity"
+            android:label="@string/contact_us" />
+        <activity
+            android:name="com.burhanstore.earningmaster.activity.RedeemActivity"
+            android:label="@string/Redeem"
+            android:theme="@style/AppFullScreenTheme" />
+        <activity
+            android:name="com.burhanstore.earningmaster.activity.WalletActivity"
+            android:label="@string/Wallet" />
+        <activity android:name="com.burhanstore.earningmaster.activity.ReferAndEarnActivity" />
+        <activity
+            android:name="com.burhanstore.earningmaster.activity.SignupActivity"
+            android:theme="@style/AppFullScreenTheme" />
+        <activity
+            android:name="com.burhanstore.earningmaster.activity.ForgotActivity"
+            android:theme="@style/AppFullScreenTheme" />
+        <activity
+            android:name="com.burhanstore.earningmaster.activity.GreatScratchActivity"
+            android:label="@string/Great_Scratch" />
+        <activity
+            android:name="com.burhanstore.earningmaster.activity.ExtraScratchActivity"
+            android:label="@string/Extra_Scratch" />
+        <activity
+            android:name="com.burhanstore.earningmaster.activity.AScratchActivity"
+            android:label="@string/Additional_Scratch" />
+        <activity
+            android:name="com.burhanstore.earningmaster.activity.ScratchActivity"
+            android:label="@string/scratch_to_win"
+            tools:ignore="DuplicateActivity" />
+        <activity android:name="com.burhanstore.earningmaster.video.Section2AdsActivity" />
+        <activity
+            android:name="com.burhanstore.earningmaster.video.Section1AdsActivity"
+            android:exported="false" />
+        <activity android:name="com.burhanstore.earningmaster.activity.IronSourceActivity" />
+        <activity android:name="com.burhanstore.earningmaster.activity.FyberActivity" />
+        <activity android:name="com.burhanstore.earningmaster.activity.PollfishActivity" />
+        <activity
+            android:name="com.burhanstore.earningmaster.activity.PayEarnGiftActivity"
+            android:label="@string/pay_earn_gift" />
+        <activity
+            android:name="com.burhanstore.earningmaster.activity.KingPotActivity"
+            android:label="@string/king_pot" />
+        <activity
+            android:name="com.burhanstore.earningmaster.activity.GoldRewardActivity"
+            android:label="@string/gold_reward" />
+        <activity
+            android:name="com.burhanstore.earningmaster.everydaygif.EverydayGiftEarningActivity"
+            android:label="@string/everyday_gifts" />
+        <activity
+            android:name="com.burhanstore.earningmaster.activity.EverydayGiftActivity"
+            android:label="@string/everyday_gifts"
+            tools:ignore="MissingClass" />
+        <activity
+            android:name="com.burhanstore.earningmaster.activity.SpinToWinActivity"
+            android:label="@string/spin_and_win" />
+        <activity
+            android:name="com.burhanstore.earningmaster.activity.TictactoeMainActivity"
+            android:label="@string/tic_tac" />
+        <activity
+            android:name="com.burhanstore.earningmaster.activity.OpenRewardActivity"
+            android:label="@string/open_reward" />
+        <activity android:name="com.burhanstore.earningmaster.activity.CompleteSurveyActivity" />
+        <activity
+            android:name="com.burhanstore.earningmaster.activity.CollectRewardActivity"
+            android:label="@string/collect_reward" />
+        <activity
+            android:name="com.burhanstore.earningmaster.activity.WebViewActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.burhanstore.earningmaster.activity.LoginActivity"
+            android:theme="@style/AppFullScreenTheme" />
+        <activity
+            android:name="com.burhanstore.earningmaster.activity.SplashActivity"
+            android:exported="true"
+            android:theme="@style/AppFullScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.burhanstore.earningmaster.activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.burhanstore.earningmaster.activity.LeaderBoardActivity"
+            android:label="@string/Leaderboard" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_app_ads_id" />
+
+        <service
+            android:name="com.burhanstore.earningmaster.services.PointsService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.burhanstore.earningmaster.services.FirebasePushMessagingService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="TODO">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher_round" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimaryDark" />
+
+        <activity
+            android:name="com.vungle.warren.ui.VungleActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+
+        <provider
+            android:name="com.vungle.warren.utility.VungleProvider"
+            android:authorities="${applicationId}.vungle-provider"
+            android:exported="false" />
+
+        <meta-data
+            android:name="applovin.sdk.key"
+            android:value="@string/Applovin_SDK_Key" />
+
+        <activity
+            android:name="com.ayetstudios.publishersdk.OfferwallActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true">
+            <intent-filter android:label="offer">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="com.example.myapplication"
+                    android:scheme="offer" /> <!-- Replace with your lower case package name -->
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.ayetstudios.publishersdk.VideoActivity"
+            android:configChanges="orientation|screenSize" />
+
+        <meta-data
+            android:name="AYET_APP_KEY"
+            android:value="@string/ayet_app_key" />
+
+    </application>
+
+</manifest>

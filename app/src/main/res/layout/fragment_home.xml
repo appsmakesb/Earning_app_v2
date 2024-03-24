@@ -1,0 +1,1319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".fragment.HomeFragment">
+
+    <RelativeLayout
+        android:id="@+id/TopBar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/text1"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="-20dp"
+            android:fontFamily="@font/inter_bold"
+            android:letterSpacing="-0.04"
+            android:lineSpacingExtra="11sp"
+            android:text="@string/welcome_to"
+            android:textColor="#f9cd1d"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/inter_bold"
+            android:letterSpacing="-0.04"
+            android:lineSpacingExtra="11sp"
+            android:text="@string/app_name"
+            android:textColor="#6765ff"
+            android:textSize="45sp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/TopBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/Main_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/section1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="UselessParent">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8sp"
+                            android:padding="12dp">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="330dp"
+                                android:layout_height="180dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                app:cardCornerRadius="18dp"
+                                app:cardElevation="3dp">
+
+                                <ImageView
+                                    android:id="@+id/Slide1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:contentDescription="@string/todo"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/bg_card_quiz" />
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="330dp"
+                                android:layout_height="180dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                app:cardCornerRadius="18dp"
+                                app:cardElevation="3dp">
+
+                                <ImageView
+                                    android:id="@+id/Slide2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:contentDescription="@string/todo"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/bg_card_quiz" />
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="330dp"
+                                android:layout_height="180dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                app:cardCornerRadius="18dp"
+                                app:cardElevation="3dp">
+
+                                <ImageView
+                                    android:id="@+id/Slide3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:contentDescription="@string/todo"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/bg_card_quiz" />
+
+                            </androidx.cardview.widget.CardView>
+
+
+                        </LinearLayout>
+
+
+                    </HorizontalScrollView>
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Main_section"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/ReferBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="60dp"
+                        android:background="@drawable/refer_earn_button"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:text="@string/refer_your_friends_and_n_earn_free_coin"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/todo"
+                        android:cropToPadding="true"
+                        android:src="@drawable/refer_icon" />
+
+                </RelativeLayout>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/daily_check_in"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    app:cardBackgroundColor="@color/colorPrimaryDark"
+                    app:cardCornerRadius="20dp">
+
+                    <LinearLayout
+                        android:id="@+id/daily_check_in_layout_ar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:baselineAligned="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="100">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="20dp"
+                            android:layout_weight="28">
+
+                            <ImageView
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_gravity="center"
+                                android:contentDescription="@string/todo"
+                                android:src="@drawable/daily_checking_ic" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="72"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="6dp"
+                                android:text="@string/daily_checking"
+                                android:textColor="@color/white"
+                                android:textSize="22sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/daily_check_in_textView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="6dp"
+                                android:text="@string/daily_checking"
+                                android:textColor="@color/white"
+                                android:textSize="22sp"
+                                android:textStyle="bold"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:fontFamily="@font/font1"
+                                android:text="@string/click_to_check_daily_coin"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:layout_marginStart="20dp"
+                        android:layout_weight="28"
+                        tools:ignore="RtlHardcoded">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/todo"
+                            android:src="@drawable/ic_baseline_arrow_forward"
+                            app:tint="@color/newColor1" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/CollectRewardBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    app:cardBackgroundColor="@color/colorPrimaryDark"
+                    app:cardCornerRadius="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:baselineAligned="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="100">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="20dp"
+                            android:layout_weight="28">
+
+                            <ImageView
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_gravity="center"
+                                android:contentDescription="@string/todo"
+                                android:src="@drawable/image1_ic" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="72"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="6dp"
+                                android:text="@string/collect_reward"
+                                android:textColor="@color/white"
+                                android:textSize="22sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:fontFamily="@font/font1"
+                                android:text="@string/click_to_earn_more_money"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:layout_marginStart="20dp"
+                        android:layout_weight="28"
+                        tools:ignore="RtlHardcoded">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/todo"
+                            android:src="@drawable/ic_baseline_arrow_forward"
+                            app:tint="@color/newColor1" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/CompleteSurveyBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    app:cardBackgroundColor="@color/colorPrimaryDark"
+                    app:cardCornerRadius="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:baselineAligned="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="100">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="20dp"
+                            android:layout_weight="28">
+
+                            <ImageView
+                                android:layout_width="41dp"
+                                android:layout_height="45dp"
+                                android:layout_gravity="center"
+                                android:contentDescription="@string/todo"
+                                android:src="@drawable/po_survey_ic"
+                                app:tint="@color/white" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="72"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="6dp"
+                                android:text="@string/complete_survey"
+                                android:textColor="@color/white"
+                                android:textSize="22sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:fontFamily="@font/font1"
+                                android:text="@string/click_to_earn_more_money"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:layout_marginStart="20dp"
+                        android:layout_weight="28"
+                        tools:ignore="RtlHardcoded">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/todo"
+                            android:src="@drawable/ic_baseline_arrow_forward"
+                            app:tint="@color/newColor1" />
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/OpenRewardBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    app:cardBackgroundColor="@color/colorPrimaryDark"
+                    app:cardCornerRadius="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:baselineAligned="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="100">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="20dp"
+                            android:layout_weight="28">
+
+                            <ImageView
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_gravity="center"
+                                android:contentDescription="@string/todo"
+                                android:src="@drawable/second_2" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="72"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="6dp"
+                                android:text="@string/open_reward"
+                                android:textColor="@color/white"
+                                android:textSize="22sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:fontFamily="@font/font1"
+                                android:text="@string/click_to_earn_more_money"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:layout_marginStart="20dp"
+                        android:layout_weight="28"
+                        tools:ignore="RtlHardcoded">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/todo"
+                            android:src="@drawable/ic_baseline_arrow_forward"
+                            app:tint="@color/newColor1" />
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/everydayGiftBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    app:cardBackgroundColor="@color/colorPrimaryDark"
+                    app:cardCornerRadius="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:baselineAligned="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="100">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="20dp"
+                            android:layout_weight="28">
+
+                            <ImageView
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_gravity="center"
+                                android:contentDescription="@string/todo"
+                                android:src="@drawable/everyday_gifts_ic" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="72"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/everydayGiftText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="6dp"
+                                android:text="@string/everyday_gifts"
+                                android:textColor="@color/white"
+                                android:textSize="22sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:fontFamily="@font/font1"
+                                android:text="@string/click_to_earn_more_money"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:layout_marginStart="20dp"
+                        android:layout_weight="28"
+                        tools:ignore="RtlHardcoded">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/todo"
+                            android:src="@drawable/ic_baseline_arrow_forward"
+                            app:tint="@color/newColor1" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/ScratchToWinBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    app:cardBackgroundColor="@color/colorPrimaryDark"
+                    app:cardCornerRadius="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:baselineAligned="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="100">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="20dp"
+                            android:layout_weight="28">
+
+                            <ImageView
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_gravity="center"
+                                android:contentDescription="@string/todo"
+                                android:src="@drawable/scratch_ic" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="72"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="6dp"
+                                android:text="@string/scratch_to_win"
+                                android:textColor="@color/white"
+                                android:textSize="22sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:fontFamily="@font/font1"
+                                android:text="@string/click_to_earn_more_money"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:layout_marginStart="20dp"
+                        android:layout_weight="28"
+                        tools:ignore="RtlHardcoded">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/todo"
+                            android:src="@drawable/ic_baseline_arrow_forward"
+                            app:tint="@color/newColor1" />
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/TicTac"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    app:cardBackgroundColor="@color/colorPrimaryDark"
+                    app:cardCornerRadius="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:baselineAligned="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="100">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="20dp"
+                            android:layout_weight="28">
+
+                            <ImageView
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_gravity="center"
+                                android:contentDescription="@string/todo"
+                                android:src="@drawable/tic_to_icon"
+                                tools:ignore="TooManyViews" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="72"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="6dp"
+                                android:text="@string/tic_tac_toe"
+                                android:textColor="@color/white"
+                                android:textSize="22sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:fontFamily="@font/font1"
+                                android:text="@string/click_to_earn_more_money"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:layout_marginStart="20dp"
+                        android:layout_weight="28"
+                        tools:ignore="RtlHardcoded">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/todo"
+                            android:src="@drawable/ic_baseline_arrow_forward"
+                            app:tint="@color/newColor1" />
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/GoldReward"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    app:cardBackgroundColor="@color/colorPrimaryDark"
+                    app:cardCornerRadius="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:baselineAligned="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="100">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="20dp"
+                            android:layout_weight="28">
+
+                            <ImageView
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_gravity="center"
+                                android:contentDescription="@string/todo"
+                                android:src="@drawable/gold_ic" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="72"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="6dp"
+                                android:text="@string/gold_reward"
+                                android:textColor="@color/white"
+                                android:textSize="22sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:fontFamily="@font/font1"
+                                android:text="@string/click_to_earn_more_money"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:layout_marginStart="20dp"
+                        android:layout_weight="28"
+                        tools:ignore="RtlHardcoded">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/todo"
+                            android:src="@drawable/ic_baseline_arrow_forward"
+                            app:tint="@color/newColor1" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/KingPot"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    app:cardBackgroundColor="@color/colorPrimaryDark"
+                    app:cardCornerRadius="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:baselineAligned="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="100">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="20dp"
+                            android:layout_weight="28">
+
+                            <ImageView
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_gravity="center"
+                                android:contentDescription="@string/todo"
+                                android:src="@drawable/king_pot_ic" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="72"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="6dp"
+                                android:text="@string/king_pot"
+                                android:textColor="@color/white"
+                                android:textSize="22sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:fontFamily="@font/font1"
+                                android:text="@string/click_to_earn_more_money"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:layout_marginStart="20dp"
+                        android:layout_weight="28"
+                        tools:ignore="RtlHardcoded">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/todo"
+                            android:src="@drawable/ic_baseline_arrow_forward"
+                            app:tint="@color/newColor1" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/PayEarnGift"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    app:cardBackgroundColor="@color/colorPrimaryDark"
+                    app:cardCornerRadius="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:baselineAligned="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="100">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="20dp"
+                            android:layout_weight="28">
+
+                            <ImageView
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_gravity="center"
+                                android:contentDescription="@string/todo"
+                                android:src="@drawable/pay_earn_gift_ic" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="72"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="6dp"
+                                android:text="@string/pay_earn_gift"
+                                android:textColor="@color/white"
+                                android:textSize="22sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:fontFamily="@font/font1"
+                                android:text="@string/click_to_earn_more_money"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:layout_marginStart="20dp"
+                        android:layout_weight="28"
+                        tools:ignore="RtlHardcoded">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/todo"
+                            android:src="@drawable/ic_baseline_arrow_forward"
+                            app:tint="@color/newColor1" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/WalletBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    app:cardBackgroundColor="@color/colorPrimaryDark"
+                    app:cardCornerRadius="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:baselineAligned="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="100">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="20dp"
+                            android:layout_weight="28">
+
+                            <ImageView
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_gravity="center"
+                                android:contentDescription="@string/todo"
+                                android:src="@drawable/redeem" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="72"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="6dp"
+                                android:text="@string/Wallet"
+                                android:textColor="@color/white"
+                                android:textSize="22sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:fontFamily="@font/font1"
+                                android:text="@string/click_to_check"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:layout_marginStart="20dp"
+                        android:layout_weight="28"
+                        tools:ignore="RtlHardcoded">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/todo"
+                            android:src="@drawable/ic_baseline_arrow_forward"
+                            app:tint="@color/newColor1" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/Earning_History"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    app:cardBackgroundColor="@color/colorPrimaryDark"
+                    app:cardCornerRadius="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:baselineAligned="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="100">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="20dp"
+                            android:layout_weight="28">
+
+                            <ImageView
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_gravity="center"
+                                android:contentDescription="@string/todo"
+                                android:src="@drawable/ic_game_selected" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="72"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="6dp"
+                                android:text="@string/earning_history"
+                                android:textColor="@color/white"
+                                android:textSize="22sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:fontFamily="@font/font1"
+                                android:text="@string/click_to_check"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:layout_marginStart="20dp"
+                        android:layout_weight="28"
+                        tools:ignore="RtlHardcoded">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/todo"
+                            android:src="@drawable/ic_baseline_arrow_forward"
+                            app:tint="@color/newColor1" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/WalletHistoryBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="100dp"
+                    android:gravity="center"
+                    app:cardBackgroundColor="@color/colorPrimaryDark"
+                    app:cardCornerRadius="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:baselineAligned="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="100">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="20dp"
+                            android:layout_weight="28">
+
+                            <ImageView
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_gravity="center"
+                                android:contentDescription="@string/todo"
+                                android:src="@drawable/three_3_ic" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="72"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="6dp"
+                                android:text="@string/transactions_history"
+                                android:textColor="@color/white"
+                                android:textSize="22sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:fontFamily="@font/font1"
+                                android:text="@string/click_to_check"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:layout_marginStart="20dp"
+                        android:layout_weight="28"
+                        tools:ignore="RtlHardcoded">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/todo"
+                            android:src="@drawable/ic_baseline_arrow_forward"
+                            app:tint="@color/newColor1" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
