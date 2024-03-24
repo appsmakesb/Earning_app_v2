@@ -336,19 +336,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 showBlockedDialog(dialogText);
             }
         }
-
-        //Block Vpn Access
-        if (fraudPrevention_controller.getBlockVpnAccess().equals("Yes")) {
-            //vpn detector
-            connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-            activeNetwork = connectivityManager.getActiveNetworkInfo();
-            checkNetworkAndVPN();
-            if (is_VPN_connected()) {
-                String dialogText = getResources().getString(R.string.vpn_dialog_text);
-                showBlockedDialog(dialogText);
-            }
-            //vpn detector
-        }
+    
 
         //App Cloning
         if (fraudPrevention_controller.getAppCloning().equals("Yes")) {
