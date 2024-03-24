@@ -159,8 +159,6 @@ public class LeaderBoardActivity extends AppCompatActivity {
             }
 
             adapter = new LeaderboardAdapter(model, activity);
-
-            list.setHasFixedSize(true);
             list.setLayoutManager(new LinearLayoutManager(activity));
             list.setAdapter(adapter);
 
